@@ -1,6 +1,5 @@
 module.exports = function(grunt) {
     
-    // Simple config to run jshint any time a file is added, changed or deleted
     grunt.initConfig({
       watch: {
         options: {
@@ -42,7 +41,7 @@ module.exports = function(grunt) {
     
 
     /**
-     * Building app
+     * npm tasks
      */
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-harp');
