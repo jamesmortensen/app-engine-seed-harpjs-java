@@ -42,11 +42,15 @@ Download and install Node.js from http://nodejs.org.
 
 Install Grunt globally:
 
+```bash
 $ npm install -g grunt
+```
 
 ## Install grunt modules
 
+```bash
 $ npm install
+```
 
 ## Install LiveReload plugin
 
@@ -57,7 +61,9 @@ In Chrome, browse to the [LiveReload Chrome Web Store page](https://chrome.googl
 - Start the Google App Engine debugger from Eclipse.
 - Run 'grunt watch'
 
+```bash
 $ grunt watch
+```
 
 Start coding.  When changes are saved, they'll be copied to the war/auto-generated folder.
 
@@ -66,9 +72,12 @@ Start coding.  When changes are saved, they'll be copied to the war/auto-generat
 
 From the project root, the folder containing the 'war' folder, run the following command:
 
+```bash
 $ grunt generate
+```
 
 Then from Eclipse, deploy the project as you normally would, using the Google App Engine plugin.  Alternatively, you may run the following command:
 
+```bash
 $ appcfg.sh update war
-
+```
