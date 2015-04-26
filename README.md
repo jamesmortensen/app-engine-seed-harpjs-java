@@ -2,7 +2,7 @@ This is an example website template powered by Grunt, grunt-watch, and HarpJS, t
 
 #Folder structure
 
- harp
+ - app-engine-seed-harpjs-java
    - node_modules: grunt-watch, HarpJS, etc.
    - source: All of the EJS, SASS, CSS, LESS, images, and other static resources.
       - js
