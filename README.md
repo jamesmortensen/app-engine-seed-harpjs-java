@@ -8,7 +8,7 @@ This is an example website template powered by Grunt, grunt-watch, and HarpJS, t
       - js
       - css
       - images
-      *.ejs
+      - *.ejs files
    - war: Google App Engine project files
       - auto-generated: The output folder containing the generated HTML/CSS and JavaScript to be served in production and development.
       - WEB-INF: Hidden folder in production, contains all Java configuration and class files.
