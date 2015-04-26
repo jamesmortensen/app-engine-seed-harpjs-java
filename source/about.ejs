@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- The HTML 4.01 Transitional DOCTYPE declaration-->
+<!-- above set at the top of the file will set     -->
+<!-- the browser's rendering engine into           -->
+<!-- "Quirks Mode". Replacing this declaration     -->
+<!-- with a "Standards Mode" doctype is supported, -->
+<!-- but may lead to some differences in layout.   -->
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>About - Hello App Engine</title>
+  </head>
+
+  <body>
+    <h1>About page for Hello App Engine, powered by HarpJS!</h1>
+    <%- partial('_header') %>	
+    <%- partial('_nav') %>
+
+    <p>HarpJS compiles EJS to static files, so all processing is done at 
+       compile time. This means your website users get served pages faster,
+       since what they're served is static files.
+    </p>
+  </body>
+</html>
+
