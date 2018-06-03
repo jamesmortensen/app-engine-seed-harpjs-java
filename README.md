@@ -22,7 +22,7 @@ EJS is not run as a server side process. Instead, all resources are precompiled 
 
 Upon hitting save, changes are instantly viewable in the browser.
 
-#Benefits
+# Benefits
 
 Traditionally, while static HTML files are served faster than any dynamically-created resource, development of large websites can be cumbersome without a way to create templates for reusable components. This approach combines the ability to create templates in development with the ability to compile static HTML files for deployment to the Web server.
 
@@ -58,28 +58,58 @@ $ npm install -g grunt
 $ npm install
 ```
 
+## Install Gradle
+
+If your website is only a static website, then you may skip this step. However, if you need servlet support or other server-side development, then you'll need Gradle in order
+to compile the Java code and run Google App Engine's development server.
+
+See [the Gradle Installation page](https://gradle.org/install/) for installation instructions. When completed, you should see this output when running from the terminal:
+
+```
+$ gradle -v
+
+------------------------------------------------------------
+Gradle 4.6
+------------------------------------------------------------
+
+Build time:   2018-02-28 13:36:36 UTC
+Revision:     8fa6ce7945b640e6168488e4417f9bb96e4ab46c
+
+Groovy:       2.4.12
+Ant:          Apache Ant(TM) version 1.9.9 compiled on February 2 2017
+JVM:          1.8.0_162 (Oracle Corporation 25.162-b12)
+OS:           Mac OS X 10.13.4 x86_64
+```
+
 ## Install LiveReload plugin
 
 In Chrome, browse to the [LiveReload Chrome Web Store page](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en) and install the extension.
 
 # Developing
 
-- Start the Google App Engine debugger from Eclipse.
-- Run 'grunt watch'
+- Start Google App Engine Development Server:
+
+-- If client-side only:
 
 ```bash
-$ grunt watch
+$ nps appengineRun
 ```
 
-Start coding.  When changes are saved, they'll be copied to the war/auto-generated folder.
+-- Otherwise, if you're also developing server-side code, use Gradle instead:
+
+```bash
+$ gradle appengineRun
+```
+
+Start coding.  
 
 
 # Deploying to Google App Engine
 
-From the project root, the folder containing the 'war' folder, run the following command:
+From the project root, the folder containing the 'src' folder, run the following command:
 
 ```bash
-$ grunt generate
+$ nps compile
 ```
 
 Then from Eclipse, deploy the project as you normally would, using the Google App Engine plugin.  Alternatively, you may run the following command:
