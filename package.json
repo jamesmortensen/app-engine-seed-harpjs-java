@@ -1,17 +1,20 @@
 {
   "name": "app-engine-seed-harpjs-java",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "Gruntfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "harp": "^0.25.0"
+  },
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-harp": "^0.1.5",
-    "grunt-sitemap": "^1.2.1"
+    "grunt": "^1.0.2",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-sitemap": "^1.2.1",
+    "nps": "^5.9.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "echo Run \"nps help\" to see list of available commands, or see package-scripts.js file."
   },
   "author": "",
   "license": "ISC"

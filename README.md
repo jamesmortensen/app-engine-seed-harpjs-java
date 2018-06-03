@@ -38,6 +38,12 @@ HarpJS requires the following development dependencies:
 Download and install Node.js from http://nodejs.org.
 
 
+### HarpJS
+
+```bash
+$ npm install -g harp@0.25.0
+```
+
 ### Grunt
 
 Install Grunt globally:
