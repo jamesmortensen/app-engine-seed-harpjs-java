@@ -1,6 +1,6 @@
 This is an example website template powered by Grunt, grunt-watch, and HarpJS, to use live-reload to make development faster while also serving users lightning-fast static pages.
 
-#Folder structure
+# Folder structure
 
  - app-engine-seed-harpjs-java
    - node_modules: grunt-watch, HarpJS, etc.
@@ -9,14 +9,14 @@ This is an example website template powered by Grunt, grunt-watch, and HarpJS, t
       - css
       - images
       - *.ejs files
-   - war: Google App Engine project files
+   - src/main/webapp: Google App Engine project files
       - auto-generated: The output folder containing the generated HTML/CSS and JavaScript to be served in production and development.
       - WEB-INF: Hidden folder in production, contains all Java configuration and class files.
-        - appengine-web.xml: App Engine configuration file, modified to serve static files from war/auto-generated
-   - src: Java source files
+        - appengine-web.xml: App Engine configuration file, modified to serve static files from src/main/webapp/auto-generated
+   - src/main/java: Java source files
 
 
-#How it Works
+# How it Works
 
 EJS is not run as a server side process. Instead, all resources are precompiled so when served at runtime they are lightning fast, static resources. To make development faster, we use grunt watch to watch for changes in the source files and then regenerate the static resources on the fly.  Lastly, we automatically reload the page in the browser using the [Chrome LiveReload plugin](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en).
 
